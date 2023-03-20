@@ -16,43 +16,67 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="cachorro.png" translatesAutoresizingMaskIntoConstraints="NO" id="jHd-BZ-bP1">
-                                <rect key="frame" x="0.0" y="44" width="374" height="128"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Digite a idade do seu cachorro para descobrir a idade em anos humanos." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AT1-7O-IlX">
-                                <rect key="frame" x="1" y="180" width="374" height="85"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Digite a idade do seu cachorro para descobrir a idade em anos humanos." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AT1-7O-IlX">
+                                <rect key="frame" x="0.0" y="184" width="375" height="85"/>
                                 <color key="backgroundColor" red="0.45490196078431372" green="0.83529411764705885" blue="0.90588235294117647" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="85" id="UfF-ua-9cU"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Digite a idade" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="3PA-5V-04G">
-                                <rect key="frame" x="135" y="273" width="106" height="34"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <textField opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Digite a idade" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="3PA-5V-04G">
+                                <rect key="frame" x="135" y="320" width="106" height="34"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="34" id="6cZ-A6-KSQ"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
                             </textField>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cG7-yW-WF6">
-                                <rect key="frame" x="1" y="354" width="374" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cG7-yW-WF6">
+                                <rect key="frame" x="16" y="492" width="343" height="53"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="53" id="mHf-YC-d1z"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5ZM-ey-uay">
-                                <rect key="frame" x="89" y="315" width="198" height="31"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5ZM-ey-uay">
+                                <rect key="frame" x="89" y="411" width="198" height="31"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="31" id="9sq-Fe-0ow"/>
+                                </constraints>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Descobrir a idade"/>
                                 <connections>
                                     <action selector="descobrirIdade:" destination="BYZ-38-t0r" eventType="touchUpInside" id="vce-aU-yLy"/>
                                 </connections>
                             </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cachorro.png" translatesAutoresizingMaskIntoConstraints="NO" id="jHd-BZ-bP1">
+                                <rect key="frame" x="-23" y="47" width="421" height="127"/>
+                            </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" red="0.25490196078431371" green="0.79607843137254897" blue="0.8666666666666667" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="5ZM-ey-uay" firstAttribute="top" secondItem="3PA-5V-04G" secondAttribute="bottom" constant="57" id="0lA-zn-yI5"/>
+                            <constraint firstItem="AT1-7O-IlX" firstAttribute="top" secondItem="jHd-BZ-bP1" secondAttribute="bottom" constant="10" id="6JD-4I-Ruc"/>
+                            <constraint firstItem="3PA-5V-04G" firstAttribute="centerX" secondItem="5ZM-ey-uay" secondAttribute="centerX" id="7Fs-20-OiJ"/>
+                            <constraint firstItem="jHd-BZ-bP1" firstAttribute="centerX" secondItem="AT1-7O-IlX" secondAttribute="centerX" id="KG7-Rs-tTQ"/>
+                            <constraint firstItem="3PA-5V-04G" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="135" id="Ke0-Eb-fmI"/>
+                            <constraint firstItem="5ZM-ey-uay" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="89" id="RCN-9V-fxB"/>
+                            <constraint firstItem="jHd-BZ-bP1" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="Rjd-nn-cZa"/>
+                            <constraint firstItem="cG7-yW-WF6" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="VEm-89-zlL"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="cG7-yW-WF6" secondAttribute="bottom" constant="233" id="Vlt-1O-vqa"/>
+                            <constraint firstItem="5ZM-ey-uay" firstAttribute="centerX" secondItem="cG7-yW-WF6" secondAttribute="centerX" id="ffT-me-ono"/>
+                            <constraint firstAttribute="trailing" secondItem="AT1-7O-IlX" secondAttribute="trailing" id="kWH-zK-z7h"/>
+                            <constraint firstItem="AT1-7O-IlX" firstAttribute="centerX" secondItem="3PA-5V-04G" secondAttribute="centerX" id="qdO-eB-V6M"/>
+                            <constraint firstItem="3PA-5V-04G" firstAttribute="top" secondItem="AT1-7O-IlX" secondAttribute="bottom" constant="51" id="vkc-e3-WdV"/>
+                            <constraint firstItem="AT1-7O-IlX" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="wGR-VS-Sjc"/>
+                            <constraint firstItem="cG7-yW-WF6" firstAttribute="top" secondItem="5ZM-ey-uay" secondAttribute="bottom" constant="50" id="xEw-ya-Iik"/>
+                        </constraints>
                     </view>
                     <connections>
                         <outlet property="campoIdadeCachorro" destination="3PA-5V-04G" id="YFf-pb-zvi"/>
@@ -61,7 +85,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="131.8840579710145" y="138.61607142857142"/>
+            <point key="canvasLocation" x="130.40000000000001" y="138.17733990147784"/>
         </scene>
     </scenes>
     <resources>
