@@ -23,3 +23,4 @@ A very simple application that converts a dog's age into human years, I'm not ai
 
 Contributions are welcome! Feel free to submit a pull request if you have any improvements or bug fixes for the app.
 
+# Issues
