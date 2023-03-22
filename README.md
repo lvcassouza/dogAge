@@ -1,4 +1,4 @@
-## dogAge
+# dogAge
 A very simple application that converts a dog's age into human years, I'm not aiming for anything too elaborate, just a simple code free practice.
 
 ## Features
